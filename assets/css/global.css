@@ -1,6 +1,10 @@
 /* Variables
 /* ---------------------------------------------------------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap'); */
+
 :root {
     /* Colours */
     --blue: #3eb0ef;
@@ -15,6 +19,11 @@
     --pink: #fa3a57;
     --brown: #a3821a;
     --darkmode: color-mod(var(--darkgrey) l(+2%));
+
+    /* Fonts */
+    --serif: 'Noto Serif KR', Georgia, serif;
+    --sans-serif: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Malgun Gothic', 'Segoe UI', 'Roboto', serif;
+    --monospace: 'Nanum Gothic Coding', Consolas, monospace;
 }
 
 /* Reset
@@ -100,7 +109,7 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font: inherit;
+    font: var(--sans-serif);
     font-size: 100%;
     vertical-align: baseline;
 }
@@ -190,7 +199,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, monospace;
+    font-family: var(--monospace);
     font-size: 1em;
 }
 button,
@@ -282,7 +291,7 @@ html {
 body {
     overflow-x: hidden;
     color: color-mod(var(--midgrey) l(-30%));
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: var(--sans-serif);
     font-size: 1.6rem;
     line-height: 1.6em;
     font-weight: 400;
